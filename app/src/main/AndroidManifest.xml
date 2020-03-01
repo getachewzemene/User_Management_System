@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.getch.user_management_system">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_user_manage"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_user_manage"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".About_Developer"
+            android:label="About Developer"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".User_detail"
+            android:label="User Detail"
+            android:parentActivityName=".view_users" />
+        <activity
+            android:name=".user_page"
+            android:label="User Page"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".view_users"
+            android:label="User Lists"
+            android:parentActivityName=".user_page" />
+        <activity
+            android:name=".user_registration"
+            android:label="Sign Up"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
